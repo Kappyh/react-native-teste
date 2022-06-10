@@ -2,7 +2,7 @@ import React from "react";
 import {StatusBar, StyleSheet, Text, TextInput, View} from "react-native";
 
 class Evento extends React.Component{
-    constructor() {
+    constructor(props) {
         super(props);
         this.state = {
             input: ''
@@ -18,7 +18,7 @@ class Evento extends React.Component{
         return (
             <View>
                 <TextInput style={estilos.entryText} value={this.state.input}
-                onChangeText={this.alteraInputff}></TextInput>
+                onChangeText={this.alteraInput}></TextInput>
                 <Text style={estilos.font30}>{this.state.input}</Text>
             </View>
         );
