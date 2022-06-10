@@ -1,23 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import OlaMundo from './components/OlaMundo';
 import Mensagem from './components/Mensagem';
+import DimensoesFixas from "./components/DimensoesFixas";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <OlaMundo nome="Gabi"/>
-      <Mensagem />
+    <View>
+      {/*<OlaMundo nome="Gabi"/>*/}
+      {/*<Mensagem />*/}
       <StatusBar style="auto" />
+      <DimensoesFixas/>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
